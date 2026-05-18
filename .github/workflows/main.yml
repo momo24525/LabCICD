@@ -25,6 +25,9 @@ jobs:
   container-registry:
     needs: quality-check
     runs-on: ubuntu-latest
+    permissions:
+      content: write
+      packages: write
     steps:
 
       - name: Clonazione codice
